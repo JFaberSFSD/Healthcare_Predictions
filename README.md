@@ -26,24 +26,24 @@ Our first goal was to better understand our data, and look for strong correlatio
 #### Heart Disease Prevelance By Exercise Induced Angina
 ![VIZ 1](Heart_Disease_Visual_1.png)
 
-> What we're learning so far is that total sales by outlet type is pretty similar across our different outlet types! Every category is a close race, regardless of which type of outlet we're looking at. But also noticable, is that each outlet type has a slightly better area than the rest. Grocery stores outsell everyone else in Fruits & Vegetables, while Supermarket Type 3 gets the nod for Household Goods, and Supermarket Type 1 wins by a hair in the Snack Foods department. 
+> What we learned initially from our data is that there is a strong correlation between what initially caused the angina (heart pains) and whether or not the patient had heart disease. As you can see from the above visualization, if the patient presented WITH exercise induced angina, the prevelance of heart disease was approaching 85%! Wow!! 
 
-#### Total Sales By Outlet
+#### Heart Disease Prevelance By Max Heart Rate
 ![VIZ 2](Heart_Disease_Visual_2.png)
 
-> Our entire dataset is comprised of sales from 10 different unique outlet locations. In looking at total sales for each of them individually, we can see that they are all extremely close! Every outlet that we have shows sales beteen 8.5M and 10M total. Between our first visualization and this one, it's easy to see that simply looking at categories of sales and which outlets they belong to, isn't going to be enough to help us predict sales moving foward. That's OK though, it's not supposed to be easy! This is where machine learning can help! It can find correlations and connections in our data that may not seem intuitive for us initially. Let's make some models! 
+> The next extremely strong correlation that we found was when we investigated max heartrate, and it's relationship with heart disease. What we found was pretty profound! Across our ENTIRE dataset, as max heart rate decreased, heart disease prevelance increased! As you can see in our visualization, patient's with a max heartrate over >180 beats per minute, or the highest category in our dataset, saw a heart disease prevelance of under 20%. On the flip side of that, our patient's with the lowest max heartrate (anything below 80) were on the opposite end of the spectrum and saw a heart disease prevelance of nearly 90%!! 
 
 ## Model
 
-After exploring and testing multiple models, our highest performing model for our data was a random forest model
+After exploring and testing multiple models, our highest performing model for our data was a KNN model. We tested multiple different models, including gradient boosting and PCA, but in the end our base KNN model (with some slight hyper-parameter tuning) was the winner. 
 
-This final model had an RMSE of 1,076.12 and an R^2 of 59.76%
+This final model had an overall accuracy of just under 90% 
 
-While not "perfect" by any stretch of the imagniation, this model can still provide some valuable insight into our sales, as it accounts for nearly 60% of the sales variance in our data. 
+We also made it a point to try to minimize the number of false negatives that our model would generate, as we all understand the importance of identifying those with the disease so they can seek treatment.   
 
 ## Recommendations:
 
-We need to continue to gather more data to help the model. While we can use the model to provide us some insight for future decisions, an R^2 of just below 60% can be improved upon. We need to make it a point to gather as much data as we can in the coming months to feed our model more information. With more information we should be able to further improve the accuracy of our model and get to an R^2 number that we can all be comfortable with! 
+With a model accuracy of just under 90%, and a limited number of false negatives, my recommendation is to move forward with implementation of the model to help us try to identify and seek treatement for potential patients with heart disease. I'm confident in the model's ability to be a "first line of defense" in detecting heart disease, and hopefully save a few lives in the process! 
 
 
 
