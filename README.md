@@ -9,7 +9,7 @@ What key metrics best predict heart disease? By knowing only a few key things ab
 
 
 ### Data:
-We have, in total, just under 1,000 patients and their health information. Some of our key metrics include the patient's age, sex, cholesterol, their resting blood pressure and their max heartrate. In total we have 11 key metrics per patient, to help us evaluate the all important 12th variable: do they have heart disease?
+We have, in total, just under 1,000 patients and their health information. Some of our key features include the patient's age, sex, cholesterol, their resting blood pressure and their max heartrate. In total we have 11 features per patient, to help us evaluate the all important 12th variable: do they have heart disease?
 
 
 ## Methods
