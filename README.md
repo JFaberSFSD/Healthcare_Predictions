@@ -31,7 +31,7 @@ Our first goal was to better understand our data, and look for strong correlatio
 #### Heart Disease Prevelance By Max Heart Rate
 ![VIZ 2](Heart_Disease_Visual_2.png)
 
-> The next extremely strong correlation that we found was when we investigated max heart rate, and its relationship with heart disease. What we found was pretty profound! Across our ENTIRE dataset, as max heart rate decreased, heart disease prevelance increased! As you can see in our visualization, patient's with a max heartrate over >180 beats per minute, or the highest category in our dataset, saw a heart disease prevelance of under 20%. On the flip side of that, our patient's with the lowest max heartrate (anything below 80) were on the opposite end of the spectrum and saw a heart disease prevelance of nearly 90%!! 
+> The next extremely strong correlation that we found was when we investigated max heart rate, and its relationship with heart disease. What we found was pretty profound! Across our ENTIRE dataset, as max heart rate decreased, heart disease prevelance increased! As you can see in our visualization, patients with a max heart rate over >180 beats per minute, or the highest category in our dataset, saw a heart disease prevelance of under 20%. On the flip side of that, our patient's with the lowest max heartrate (anything below 80) were on the opposite end of the spectrum and saw a heart disease prevelance of nearly 90%!! 
 
 ## Model
 
