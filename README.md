@@ -37,13 +37,13 @@ Our first goal was to better understand our data, and look for strong correlatio
 
 After exploring and testing multiple models, our highest performing model for our data was a KNN model. We tested multiple different models, including gradient boosting and PCA, but in the end our base KNN model (with some slight hyper-parameter tuning) was the winner. 
 
-This final model had an overall accuracy of just under 90% 
+This final model had an overall accuracy of just under 90%, but more importantly had a precision of 93% and a recall of 90%. 
 
-We also made it a point to try to minimize the number of false negatives that our model would generate, as we all understand the importance of identifying those with the disease so they can seek treatment.   
+It was important to maximize our recall percentage to minimize the number of false negatives that our model would generate, as we all understand the importance of identifying those with the disease so they can seek treatment.    
 
 ## Recommendations:
 
-With a model accuracy of just under 90%, and a limited number of false negatives, my recommendation is to move forward with implementation of the model to help us try to identify and seek treatement for potential patients with heart disease. I'm confident in the model's ability to be a "first line of defense" in detecting heart disease, and hopefully save a few lives in the process! 
+With a model accuracy of just under 90%, and a recall of 90%, my recommendation is to move forward with implementation of the model to help us try to identify and seek treatement for potential patients with heart disease. I'm confident in the model's ability to be a "first line of defense" in detecting heart disease, and hopefully save a few lives in the process! 
 
 
 
